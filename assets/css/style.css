@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.mycontainer {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --fs-xs: 14px;
+--fs-sm: 16px;
+--fs-md: 20px;
+--fs-lg: 28px;
+--fs-xl: 40px;
+--fs-xxl: 50px; */
+
+:root {
+    --ff-primary: 'Montserrat', sans-serif;
+
+
+    --fs-xs: 14px;
+    --fs-sm: 14px;
+    --fs-md: 14px;
+    --fs-lg: 16px;
+    --fs-xl: 28px;
+    --fs-xxl: 32px;
+
+    --primary-color: #03ABB5;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --secondary-color: #fd9e78;
+    --lite-color: #fc9c73;
+    --orange-color: #FFF8E5;
+
+}
+
+.bg_primary {
+    background-color: var(--primary-color);
+}
+
+.color_primary {
+    color: var(--primary-color);
+}
+
+.bg_lite {
+    background-color: var(--lite-color);
+}
+
+.normal-para {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-sm);
+    color: var(--black-color) !important;
+    line-height: 24px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.opacity-80 {
+    opacity: 0.8 !important;
+}
+
+.main-heading {
+    color: var(--black-color);
+    font-size: var(--fs-xxl);
+    font-weight: 700;
+    font-family: var(--ff-primary);
+    line-height: normal;
+}
+
+.sub-heading {
+    color: var(--black-color);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    font-family: var(--ff-primary);
+    line-height: normal;
+}
+
+.sub-para {
+    color: var(--black-color);
+    font-size: var(--fs-md);
+    font-weight: 600;
+    font-family: var(--ff-primary);
+    line-height: 30px;
+}
+
+/* .mycontainer:after {
+    background: url("../imges/webp/bg-img.png") no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+} */
+
+/* HeroSection */
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.closbtn {
+    top: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
+}
+
+.navbar1 {
+    min-height: 100vh;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    left: -103%;
+    background-color: red;
+    transition: all linear 300ms;
+}
+
+.navHeader {
+    padding: 13.996px 0px;
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(6px);
+    height: 100%;
+}
+
+.main-logo {
+    width: 169px;
+    height: 52px;
+}
+
+.inline-btn {
+    height: 50px;
+    width: 151px;
+    font-size: 16px !important;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    font-family: var(--primary-color);
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: normal;
+}
+
+.border-para {
+    max-width: 275px;
+    width: 100%;
+    white-space: nowrap;
+    padding: 10px 24px;
+    border-radius: 40px;
+    border: 1px solid var(--Orange, #FD9E78);
+    background: rgba(253, 158, 120, 0.10);
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.hero-bg {
+    background: radial-gradient(126.95% 92.25% at 94.68% 94.39%, #FEDFE5 0%, rgba(166, 225, 200, 0.00) 100%), linear-gradient(214deg, #FFEC9C 13.42%, #BFDEE3 87.92%);
+}
+
+.heroImg {
+    max-width: px;
+    width: 100%;
+    height: 558px;
+}
+
+.blur {
+    height: 7%;
+    width: 100%;
+    background: linear-gradient(180deg, #FFF8E5 0%, rgba(255, 248, 229, 0.00) 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* --------------------Neptune section--------------- */
+
+.bg-neptune::after {
+    position: absolute;
+    content: "";
+    background: url("../imges/webp/bg-neptune.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    top: 0;
+}
+
+.card-neptune {
+    border-radius: 18px;
+    max-width: 811px;
+    box-shadow: 0px 7px 19px 0px rgba(0, 0, 0, 0.06), 0px 6px 0px 0px #FD9E78, 0px -6px 0px 0px #5AA7A1;
+}
+
+.max-w-613 {
+    max-width: 613px;
+}
+
+.list li {
+    list-style-type: disc !important;
+}
+
+.neptune_img {
+    bottom: 0;
+    right: 0;
+    width: 112px;
+    height: 157px;
+}
+
+.neptune_img1 {
+    bottom: 26px;
+    right: 0;
+    width: 165.181px;
+    height: 158.298px;
+}
+
+
+/* --------------------student section--------------- */
+.roamap-img {
+    width: 150px;
+    height: 172px;
+    filter: drop-shadow(0px 8px 25px rgba(252, 156, 115, 0.12));
+}
+
+
+
+
+
+
+
+/* --------------------slider section--------------- */
+
+.comma-top1 {
+    top: -20px;
+    left: 0;
+    width: 33.838px;
+    height: 25.137px;
+}
+
+.comma-top2 {
+    bottom: 20px;
+    right: 0px;
+    width: 33.838px;
+    height: 25.137px;
+}
+
+.slick-dots li button:before {
+    content: unset !important;
+}
+
+.slick-dots li button {
+    width: 21px !important;
+    height: 6px !important;
+    background: var(--white-color) !important;
+    border-radius: 39px !important;
+    opacity: 0.3 !important;
+}
+
+.slick-dots li.slick-active button {
+    width: 78px !important;
+    height: 6px !important;
+    background: var(--primary-color) !important;
+    border-radius: 39px !important;
+    opacity: 1 !important;
+}
+
+.slick-dots li {
+    width: unset !important;
+    height: unset !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------Offerning--------------- */
+.max-w-844 {
+    max-width: 844px;
+}
+
+.hexagonImg {
+    height: 170px;
+    width: 150px;
+}
+
+.hexagaon-content {
+    top: 40px;
+}
+
+.bg-offering {
+    background-color: var(--orange-color);
+}
+
+.offering_img::after {
+    position: absolute;
+    content: "";
+    background: url("../imges/webp/bg-img2.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    top: 0;
+}
+
+/* --------------------Map Section--------------- */
+.mapImg {
+    max-width: 994px;
+    width: 100%;
+}
+
+
+
+
+/* --------------------About Section--------------- */
+.bg-about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../imges/webp/bg-img1.png') no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.pb-220 {
+    padding-bottom: 30px;
+}
+
+.peopleImg2 {
+    border-radius: 50%;
+    border: 4.086px solid var(--secondary-color);
+    height: 64px;
+    width: 64px;
+    box-shadow: 0px 9.53459px 42.2246px 0px rgba(253, 158, 120, 0.65);
+}
+
+.peopleImg1 {
+    height: 49px;
+    width: 49px;
+}
+
+/* --------------------FAQ Section--------------- */
+.max-w-980 {
+    max-width: 980px;
+}
+
+.accordian-head {
+    color: var(--black-color);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-md);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.accordian-item1 {
+    cursor: pointer;
+    background-color: var(--white-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    border-radius: 16px 16px 0px 0px;
+    transition: all linear 300ms;
+}
+
+.accordian-item1 .normal-para {
+    display: none;
+}
+
+.accordian-item1.active .normal-para {
+    display: block;
+}
+
+.accordian-item1.active {
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.accordian-item1.active .group svg {
+    transform: rotate(180deg);
+    transition: all linear 500ms;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------Foooter--------------- */
+.footerImg {
+    width: 200px;
+    height: 63px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-14 {
+    gap: 14px;
+}
+
+.borderTop {
+    border-top: 1px solid var(--white-color);
+    opacity: 0.2;
+}
+
+/* Preloder */
+
+#preloader-box {
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 7 !important;
+}
+
+.loder-img {
+    animation: spin 4s linear infinite;
+}
+
+
+
+
+/* back to top */
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    transition: all linear 250ms;
+}
+
+.back-to-top:hover {
+    background-color: var(--red-color);
+}
+
+
+
+@media (min-width:370px) {
+    .hexagonImg {
+        height: 190px;
+        width: 167px;
+    }
+
+    .hexagaon-content {
+        top: 51px;
+    }
+}
+
+@media (min-width:576px) {
+    :root {
+        --fs-sm: 15px;
+        --fs-md: 16px;
+        --fs-lg: 20px;
+        --fs-xl: 32px;
+        --fs-xxl: 36px;
+    }
+
+    /* --------------------slider section--------------- */
+
+    .comma-top1 {
+        top: -20px;
+        left: 0px;
+        width: 50px;
+        height: 40px;
+    }
+
+    .comma-top2 {
+        bottom: 10px;
+        right: 0px;
+        width: 50px;
+        height: 40px;
+    }
+
+    /* --------------------About us section--------------- */
+    .pb-220 {
+        padding-bottom: 50px;
+    }
+
+    .peopleImg2 {
+        height: 120px;
+        width: 120px;
+    }
+
+    .peopleImg1 {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 24px;
+        --fs-xl: 36px;
+        --fs-xxl: 42px;
+    }
+
+    /* --------------------Neptune section--------------- */
+    .neptune_img {
+        bottom: 0;
+        right: 0;
+        width: 170px;
+        height: 240px;
+    }
+
+    .neptune_img1 {
+        bottom: 26px;
+        right: -16%;
+        width: 338px;
+        height: 323.917px;
+    }
+
+
+
+    /* --------------------slider section--------------- */
+
+    .comma-top1 {
+        top: -40px;
+        left: -15px;
+        width: 70px;
+        height: 52px;
+    }
+
+    .comma-top2 {
+        bottom: 10px;
+        right: -20px;
+        width: 70px;
+        height: 52px;
+    }
+
+    /* --------------------Foooter--------------- */
+    .footerImg {
+        width: 240px;
+        height: 75px;
+    }
+
+    .gap-md-20 {
+        gap: 20px;
+    }
+
+    .iconCricle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+    }
+
+    /* --------------------About us section--------------- */
+    .pb-220 {
+        padding-bottom: 110px;
+    }
+
+    .peopleImg2 {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        right: 50px;
+        top: 70px;
+    }
+
+    .peopleImg1 {
+        height: 85px;
+        width: 85px;
+        position: absolute;
+        bottom: -60px;
+        left: 20px;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs-md: 20px;
+        --fs-lg: 28px;
+        --fs-xl: 40px;
+        --fs-xxl: 50px;
+    }
+
+    /* --------------------About us section--------------- */
+    .pb-220 {
+        padding-bottom: 220px;
+    }
+
+    .peopleImg2 {
+        height: 198px;
+        width: 198px;
+        right: 20px;
+        top: 120px;
+    }
+
+    .peopleImg1 {
+        height: 97px;
+        width: 97px;
+        bottom: -20px;
+        left: 50px;
+    }
+}
+
+@media (min-width:1140px) {
+    .heroImg {
+        max-width: 800px;
+        width: 100%;
+        height: 558px;
+        transform: scale(1.7);
+    }
+}

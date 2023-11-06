@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--  ******************** AOS Link ******************** -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ********************  slick slider link ******************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+    <!--  ******************** Preloder ******************** -->
+    <!-- <div id="box" class="overflow-hidden">
+        <div id="preloader-box" class="d-flex flex-column justify-content-center">
+            <img class="mx-auto loder-img" src="./assets/image/png/loder.webp" alt="preloder" />
+            <p class="fs_xl fw_extraBold color_white mb-0 pt-4">Welcome to Repforce</p>
+        </div>
+    </div> -->
+    <!-- ******************** Navbar Section ******************** -->
+    <nav>
+        <div class="d-flex flex-column min-vh-100 hero-bg position-relative overflow-hidden">
+            <header class="navHeader position-sticky w-100 z-3">
+                <div class="mycontainer">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="./assets/imges/webp/main-logo.png" alt="main-logo" class="main-logo">
+                        <div class=" d-none d-md-block">
+                            <ul class="mb-0 ps-0 d-md-flex gap-30 align-items-center">
+                                <li><a href="#" class="normal-para">Home</a></li>
+                                <li><a href="#" class="normal-para">About us</a></li>
+                                <li><a href="#" class="normal-para">Product</a></li>
+                                <li><button type="button" class="inline-btn border-0">Apply now</button></li>
+                            </ul>
+                        </div>
+                        <div id="openNav" onclick="openNav()" class="menu cursor d-md-none">
+                            <img src="./assets/imges/svg/menu.svg" alt="menu" class="cursor">
+                        </div>
+                        <div id="Menu" class="d-md-none navbar1 d-flex justify-content-center align-items-center">
+                            <div class=" closbtn cursor" onclick="closeNav()">
+                                <img src="./assets/imges/svg/crossIcon.svg" alt="crossIcon">
+                            </div>
+                            <ul class="mb-0 ps-0 d-flex flex-column align-items-center gap-3 text-white">
+                                <li onclick="closeNav()"><a href="#" class="normal-para">Home</a></li>
+                                <li onclick="closeNav()"><a href="#" class="normal-para">About us</a>
+                                </li>
+                                <li onclick="closeNav()"><a href="#" class="normal-para">Product</a></li>
+                                <li><button type="button" class="inline-btn border-0">Apply now</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="flex-grow-1 d-flex align-items-center w-100">
+                <div class="mycontainer">
+                    <div class="row pt-5 mt-2 pt-lg-0 mt-lg-0">
+                        <div class="col-lg-6 d-flex flex-column justify-content-center">
+                            <p class="normal-para mb-0 border-para">We are a global online school</p>
+                            <h1 class="main-heading mb-0 py-3">Where 8-12 year children build confidence.</h1>
+                            <p class="mb-0 normal-para">
+                                We are global online school where students aged 8-12 grow their confidence by playing
+                                games with other. Our weekly
+                                classes challenge your child, help them make new friends, and build their confidence.
+                            </p>
+                            <button type="button" class="inline-btn border-0 mt-4">Apply now</button>
+                        </div>
+                        <div class="col-lg-6 position-relative">
+                            <img src="./assets/imges/webp/heroImg.png" alt="heroImg" class="heroImg pos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img src="./assets/imges/webp/bulr_img.png" alt="blur" class="w-100 position-absolute bottom-0">
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- ******************** Neptune Section ******************** -->
+    <section class="bg-offering bg-neptune position-relative py-5">
+        <div class="mycontainer py-5 position-relative mt-5 mb-md-5 z-1">
+            <div class="card-neptune mx-auto bg-white pt-3 pb-5 pt-md-5 px-3 ps-sm-4 position-relative overflow-hidden">
+                <img src="./assets/imges/webp/neptune-img1.png" alt="neptune img"
+                    class="position-absolute neptune_img1">
+                <img src="./assets/imges/webp/neptune-img.png" alt="neptune img" class="position-absolute neptune_img">
+                <div class="ps-md-2 pt-2 mt-1 position-relative z-1">
+                    <h2 class="sub-heading mb-0">Why we created <span class="color_primary">Neptune</span>
+                    </h2>
+                    <ul class="max-w-613 list pb-md-2 mb-md-1 mb-0 pb-5 mb-3">
+                        <li class="normal-para mb-0 opacity-80 pt-3">A smart 10 year old can ace their school work.
+                        </li>
+                        <li class="normal-para mb-0 opacity-80 pt-2">Yet this same child can struggle on a team.
+                            Social
+                            anxiety may overwhelm them, or they may be unable to stop talking to
+                            make space for others. Rarely can they rally a group of peers forward.</li>
+                        <li class="normal-para mb-0 opacity-80 pt-2">Consequential decisions are made by teams:
+                            Performing surgery, negotiating contracts, repairing a satellite.</li>
+                        <li class="normal-para mb-0 opacity-80 pt-2">We created Neptune to challenge children to
+                            succeed
+                            in high performing teams.</li>
+                        <li class="normal-para mb-0 opacity-80 pt-2 mb-1">Where the consequences are limited to a video
+                            game.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************** Student Section ******************** -->
+    <section class="py-5 bg-offering">
+        <div class="mycontainer">
+            <h2 class="sub-heading mb-0 text-center">student <span class="color_primary">Outcomes</span></h2>
+            <p class="normal-para text-center pt-3 mb-2">
+                Our experience across top tier firms, including McKinsey & Company and Google, and our experience
+                <san class="d-lg-block">
+                    building ClassDojo,
+                    enables us to teach your child from a perspective no one else can: We bring battle tested
+                </san>
+                industry techniques from the best problem solvers in the world.
+            </p>
+            <h5 class="normal-para opacity-100 text-center fw-bold mb-1">Your child will learn to:</h5>
+            <div class="pt-4 d-flex ">
+                <div class="d-flex justify-content-center align-items-center position-relative pt-5 ">
+                    <img src="./assets/imges/webp/roadmap-hexagon.png" alt="roadmap img" class="roamap-img">
+                    <div class="z-2 position-relative position-absolute d-flex flex-column align-items-center">
+                        <img src="./assets/imges/svg/buid.svg" alt="buid img" height="41px" width="41px">
+                        <p class="mb-0 pt-2 normal-para opacity-100 fw-semibold px-2 text-center">Build confidence</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center position-relative mb-5 pb-5">
+                    <img src="./assets/imges/webp/roadmap-hexagon.png" alt="roadmap img" class="roamap-img">
+                    <div class="z-2 position-relative position-absolute d-flex flex-column align-items-center">
+                        <img src="./assets/imges/svg/buid.svg" alt="buid img" height="41px" width="41px">
+                        <p class="mb-0 pt-2 normal-para opacity-100 fw-semibold px-2 text-center">Build confidence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ******************** Slider Section ******************** -->
+
+    <section class="py-md-5 bg_lite">
+        <div class="mycontainer py-5">
+            <h2 class="sub-heading mb-0 mb-md-2 text-center text-white pb-4">Testimonials</h2>
+            <div class="slick-slider03">
+                <div class="d-flex justify-content-center flex-column align-items-center pt-5">
+                    <div class="position-relative pb-4">
+                        <img class="position-absolute comma-top1" src="./assets/imges/webp/coma1.png" alt="Coma 1">
+                        <p class="position-relative text-white sub-para fw-medium text-center mb-0 px-3">
+                            Tortor varius ultrices felis sed. Lectus arcu dolor justo
+                            <span class="d-sm-block">
+                                consectetur varius sodales. Dictumst donec mattis sollicitudin
+                            </span>
+                            at. Non metus ornare pharetra sit. Velit at pulvinar eget ut.
+                            <span class="d-sm-block">
+                                Sociis urna fames nulla iaculis. Sit blandit arcu sed a diam
+                            </span>
+                            sed viverra sollicitudin diam.
+                        </p>
+                        <img class="position-absolute comma-top2" src="./assets/imges/webp/coma2.png" alt="Coma 2">
+                    </div>
+                    <img src="./assets/imges/webp/designer.png" alt="Stars">
+                    <h4 class="sub-para text-white pt-2 mt-1 mb-0">Cameron Williamson</h4>
+                    <p class="normal-para text-white opacity-100 mb-0">Designer</p>
+                </div>
+                <div class="d-flex justify-content-center flex-column align-items-center pt-5">
+                    <div class="position-relative pb-4">
+                        <img class="position-absolute comma-top1" src="./assets/imges/webp/coma1.png" alt="Coma 1">
+                        <p class="position-relative text-white sub-para fw-medium text-center mb-0 px-3">
+                            Tortor varius ultrices felis sed. Lectus arcu dolor justo
+                            <span class="d-sm-block">
+                                consectetur varius sodales. Dictumst donec mattis sollicitudin
+                            </span>
+                            at. Non metus ornare pharetra sit. Velit at pulvinar eget ut.
+                            <span class="d-sm-block">
+                                Sociis urna fames nulla iaculis. Sit blandit arcu sed a diam
+                            </span>
+                            sed viverra sollicitudin diam.
+                        </p>
+                        <img class="position-absolute comma-top2" src="./assets/imges/webp/coma2.png" alt="Coma 2">
+                    </div>
+                    <img src="./assets/imges/webp/designer.png" alt="Stars">
+                    <h4 class="sub-para text-white pt-2 mt-1 mb-0">Cameron Williamson</h4>
+                    <p class="normal-para text-white opacity-100 mb-0">Designer</p>
+                </div>
+                <div class="d-flex justify-content-center flex-column align-items-center pt-5">
+                    <div class="position-relative pb-4">
+                        <img class="position-absolute comma-top1" src="./assets/imges/webp/coma1.png" alt="Coma 1">
+                        <p class="position-relative text-white sub-para fw-medium text-center mb-0 px-3">
+                            Tortor varius ultrices felis sed. Lectus arcu dolor justo
+                            <span class="d-sm-block">
+                                consectetur varius sodales. Dictumst donec mattis sollicitudin
+                            </span>
+                            at. Non metus ornare pharetra sit. Velit at pulvinar eget ut.
+                            <span class="d-sm-block">
+                                Sociis urna fames nulla iaculis. Sit blandit arcu sed a diam
+                            </span>
+                            sed viverra sollicitudin diam.
+                        </p>
+                        <img class="position-absolute comma-top2" src="./assets/imges/webp/coma2.png" alt="Coma 2">
+                    </div>
+                    <img src="./assets/imges/webp/designer.png" alt="Stars">
+                    <h4 class="sub-para text-white pt-2 mt-1 mb-0">Cameron Williamson</h4>
+                    <p class="normal-para text-white opacity-100">Designer</p>
+                </div>
+                <div class="d-flex justify-content-center flex-column align-items-center pt-5">
+                    <div class="position-relative pb-4">
+                        <img class="position-absolute comma-top1" src="./assets/imges/webp/coma1.png" alt="Coma 1">
+                        <p class="position-relative text-white sub-para fw-medium text-center mb-0 px-3">
+                            Tortor varius ultrices felis sed. Lectus arcu dolor justo
+                            <span class="d-sm-block">
+                                consectetur varius sodales. Dictumst donec mattis sollicitudin
+                            </span>
+                            at. Non metus ornare pharetra sit. Velit at pulvinar eget ut.
+                            <span class="d-sm-block">
+                                Sociis urna fames nulla iaculis. Sit blandit arcu sed a diam
+                            </span>
+                            sed viverra sollicitudin diam.
+                        </p>
+                        <img class="position-absolute comma-top2" src="./assets/imges/webp/coma2.png" alt="Coma 2">
+                    </div>
+                    <img src="./assets/imges/webp/designer.png" alt="Stars">
+                    <h4 class="sub-para text-white pt-2 mt-1 mb-0">Cameron Williamson</h4>
+                    <p class="normal-para text-white opacity-100 mb-0">Designer</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ******************** Offering Section ******************** -->
+    <section class="py-md-5 bg-offering offering_img position-relative">
+        <div class="mycontainer max-w-844 py-5 position-relative z-1">
+            <h2 class="sub-heading mb-0 text-center">Class <span class="color_primary">offering</span></h2>
+            <p class="normal-para pt-4 mt-md-1 opacity-80 text-center mb-0">Each week, classes of 10-12 students work
+                together
+                on collaborative challenges presented through the medium of video
+                games, working through these challenges, students learn critical skills which are missing from the
+                curriculum in many
+                schools today: navigation highly ambiguous situations, resolving conflicts with their peers,
+                regulating
+                their emotions
+                during high stakes situations, negotiating with competing teams.
+            </p>
+            <p class="normal-para opacity-80 max-w-844 text-center mb-0 pt-3">
+                Our teachers use the socratic method to coach our students-rather than giving students the ‘correct’
+                answer, teachers
+                ask questions to aid the student in discovering the path for themselves. our teachers don’t take
+                themselves too
+                seriously in class-they create a fun, low-risk environment, in which students can feel free to
+                experiment with different
+                collaboration styles.
+            </p>
+            <div class="d-flex align-items-center justify-content-center my-1 pt-4">
+                <h3 class="sub-heading mb-0 fw-semibold text-center">$195</h3><span class="normal-para ps-1">per
+                    month</span>
+            </div>
+            <div class="row py-3 justify-content-center">
+                <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                    <div class="position-relative">
+                        <img src="./assets/imges/webp/hexagon.png" alt="hexagon" class="d-block hexagonImg">
+                        <div class="position-absolute hexagaon-content">
+                            <div class="d-flex justify-content-center">
+                                <img height="36px" width="36px" src="./assets/imges/svg/rightImg.svg" alt="right">
+                            </div>
+                            <p class="normal-para text-center mb-0 px-3 pt-2">60 minute class each week.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                    <div class="position-relative">
+                        <img src="./assets/imges/webp/hexagon.png" alt="hexagon" class="d-block hexagonImg">
+                        <div class="position-absolute hexagaon-content">
+                            <div class="d-flex justify-content-center">
+                                <img height="36px" width="36px" src="./assets/imges/svg/rightImg.svg" alt="right">
+                            </div>
+                            <p class="normal-para text-center mb-0 px-3 pt-2">12 students per class</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 pt-3 pt-sm-0 d-flex justify-content-center">
+                    <div class="position-relative">
+                        <img src="./assets/imges/webp/hexagon.png" alt="hexagon" class="d-block hexagonImg">
+                        <div class="position-absolute hexagaon-content">
+                            <div class="d-flex justify-content-center">
+                                <img height="36px" width="36px" src="./assets/imges/svg/rightImg.svg" alt="right">
+                            </div>
+                            <p class="normal-para text-center mb-0 px-4 pt-2">Dedicated teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 pt-3 pt-md-0 d-flex justify-content-center">
+                    <div class="position-relative">
+                        <img src="./assets/imges/webp/hexagon.png" alt="hexagon" class="d-block hexagonImg">
+                        <div class="position-absolute hexagaon-content">
+                            <div class="d-flex justify-content-center">
+                                <img height="36px" width="36px" src="./assets/imges/svg/rightImg.svg" alt="right">
+                            </div>
+                            <p class="normal-para text-center mb-0 px-4 pt-2">Progress note home each month</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button type="button" class="inline-btn border-0 pb-1">Apply now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ******************** Map Section ******************** -->
+    <section class="bg-offering py-4 ">
+        <div class="mycontainer pt-2">
+            <h2 class="sub-heading mb-0 text-center">World <span class="color_primary">Map</span></h2>
+            <p class="normal-para text-center mb-4 pt-2">
+                The students take a class with kids from all over the world
+            </p>
+            <div class="d-flex justify-content-center pt-md-4 pt-lg-5">
+                <img src="./assets/imges/webp/map.png" alt="map" class="mapImg">
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************** AboutUs Section ******************** -->
+    <section class="bg-offering pt-5 bg-about position-relative pb-220">
+        <div class="mycontainer pt-5 position-relative z-1">
+            <img src="./assets/imges/webp/people2.png" alt="people2" class="peopleImg2 d-none d-md-block">
+            <img src="./assets/imges/webp/people1.png" alt="people1" class=" peopleImg1 d-none d-md-block">
+            <div class="position-relative z-2">
+                <h2 class="sub-heading mb-0 text-center pb-4 pb-md-5">About <span class="color_primary">Us</span></h2>
+                <h3 class="sub-para text-center mb-0 pt-lg-5 mt-md-3">Stuart Reavley</h3>
+                <p class="normal-para text-center mb-0 opacity-80">Ceo & founder</p>
+                <p class="normal-para text-center mb-0 opacity-80 pt-3 mt-1">
+                    Stuart has built high performing teams for the last 15 years across McKinsey, Google,
+                    <span class="d-md-block">
+                        Uber, and ClassDojo. He has taught students of various ages, from 12 year olds, to
+                    </span>
+                    college students, to young adults in their first job after college. Prior to starting
+                    <span class="d-md-block">
+                        Neptune, Stuart ran the teaching organization at another online school, where he
+                    </span>
+                    led a team of 100 teachers who taught 5,000 6-14 year olds every week. Stuart holds
+                    <span class="d-md-block"> a first class degree in Computer Science from the University of Cambridge
+                        and
+                        is a
+                    </span> parent himself - he has a 7 year old daughter and a 5 year old son.
+                </p>
+                <div class="d-flex gap-3 justify-content-center align-items-center pt-4 mt-1 d-md-none">
+                    <img src="./assets/imges/webp/people2.png" alt="people2" class="peopleImg2">
+                    <img src="./assets/imges/webp/people1.png" alt="people1" class=" peopleImg1">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ******************** FAQ Section ******************** -->
+    <section class="bg-offering py-5">
+        <div class="mycontainer max-w-980">
+            <h2 class="sub-heading mb-0 text-center pb-5">Frequently Asked
+                <span class="color_primary">Question</span>
+            </h2>
+            <div class="d-flex align-item-center justify-content-center flex-column gap-14 gap-md-20 pt-md-3">
+                <div class="accordian-item1 active p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.1 How do I get started with video gaming?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.2 Are video games only for children and teenagers?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.3 What are some popular gaming platforms or consoles?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.4 How can I find information about upcoming video game releases?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.5 How do I deal with in-game purchases and microtransactions?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.6 Nulla porta euismod urna orci gravida justo nulla quam?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.7 Et erat suspendisse elit fermentum tincidunt eget nislestibulum?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.8 Pharetra nisl arcu cursus semper dis augue praesent et lectus ut?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.9 Libero eu id integer semper. Pellentesque suspendisse nunc nunc?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+                <div class="accordian-item1 p-4">
+                    <div class="group accordian-head d-flex justify-content-between">
+                        Q.10 Sed nibh augue laoreet massa vitae sit vitae. Vel dignissim a nam?
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.9553 13.3844C17.7209 13.6188 17.403 13.7504 17.0716 13.7504C16.7401 13.7504 16.4222 13.6188 16.1878 13.3844L10.0003 7.19692L3.81281 13.3844C3.57705 13.6121 3.2613 13.7381 2.93355 13.7353C2.60581 13.7324 2.29229 13.601 2.06053 13.3692C1.82877 13.1374 1.69731 12.8239 1.69446 12.4962C1.69162 12.1684 1.81761 11.8527 2.04531 11.6169L9.11656 4.54567C9.35097 4.31133 9.66885 4.17969 10.0003 4.17969C10.3318 4.17969 10.6496 4.31133 10.8841 4.54567L17.9553 11.6169C18.1896 11.8513 18.3213 12.1692 18.3213 12.5007C18.3213 12.8321 18.1896 13.15 17.9553 13.3844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="normal-para pt-3 pe-sm-4 pe-lg-5 check">
+                        To start gaming, you'll need a gaming platform (PC, console, or mobile), games, and
+                        possibly accessories like a
+                        controller or keyboard and mouse. Simply choose a game that interests you and start
+                        playing.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************** Footer ******************** -->
+    <footer class="bg_primary ">
+        <div class="mycontainer py-5 ">
+            <div class="d-flex flex-column justify-content-center align-items-center py-md-4">
+                <img src="./assets/imges/webp/footer_logo.png" alt="footer" class="footerImg">
+                <p class="normal-para text-white pt-4 my-1 text-center">Tortor ipsum dui accumsan malesuada feugiat quis
+                </p>
+                <div class="d-flex flex-column flex-md-row gap-14 gap-md-20 pt-3 align-items-center">
+                    <ul class="d-flex ps-0 mb-0 gap-20">
+                        <li><a href="#" class="text-white normal-para fw-semibold opacity-100">Our approach</a></li>
+                        <li><a href="#" class="text-white normal-para fw-semibold opacity-100">About us</a></li>
+                        <li><a href="#" class="text-white normal-para fw-semibold opacity-100">Privacy policy</a></li>
+                    </ul>
+                    <ul class="d-flex ps-0 mb-0 gap-20">
+                        <li><a href="#" class="text-white normal-para fw-semibold opacity-100">Terms as condations</a>
+                        </li>
+                        <li><a href="#" class="text-white normal-para fw-semibold opacity-100">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex gap-4 pt-5">
+                    <a href="#" class="d-flex justify-content-center align-items-center iconCricle">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.0006 8.41211C11.7816 8.41211 10.6125 8.89555 9.75052 9.75609C8.88855 10.6166 8.4043 11.7838 8.4043 13.0008C8.4043 14.2177 8.88855 15.3849 9.75052 16.2454C10.6125 17.106 11.7816 17.5894 13.0006 17.5894C14.2196 17.5894 15.3887 17.106 16.2507 16.2454C17.1126 15.3849 17.5969 14.2177 17.5969 13.0008C17.5969 11.7838 17.1126 10.6166 16.2507 9.75609C15.3887 8.89555 14.2196 8.41211 13.0006 8.41211Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.60353 0.408C10.5195 -0.136 15.4806 -0.136 20.3965 0.408C23.0822 0.707321 25.2474 2.8181 25.5628 5.50916C26.1457 10.4856 26.1457 15.5129 25.5628 20.4893C25.2474 23.1804 23.0822 25.2912 20.3979 25.5919C15.4815 26.136 10.5199 26.136 5.60353 25.5919C2.91788 25.2912 0.752667 23.1804 0.43729 20.4907C-0.145763 15.5138 -0.145763 10.4861 0.43729 5.50916C0.752667 2.8181 2.91788 0.707321 5.60353 0.408ZM20.0713 4.5279C19.6962 4.5279 19.3365 4.67665 19.0712 4.94143C18.806 5.20621 18.657 5.56533 18.657 5.93979C18.657 6.31424 18.806 6.67336 19.0712 6.93814C19.3365 7.20292 19.6962 7.35168 20.0713 7.35168C20.4463 7.35168 20.8061 7.20292 21.0713 6.93814C21.3365 6.67336 21.4855 6.31424 21.4855 5.93979C21.4855 5.56533 21.3365 5.20621 21.0713 4.94143C20.8061 4.67665 20.4463 4.5279 20.0713 4.5279ZM6.28237 12.9992C6.28237 11.2206 6.99012 9.51475 8.24993 8.25704C9.50973 6.99933 11.2184 6.29276 13 6.29276C14.7817 6.29276 16.4903 6.99933 17.7501 8.25704C19.0099 9.51475 19.7177 11.2206 19.7177 12.9992C19.7177 14.7779 19.0099 16.4837 17.7501 17.7414C16.4903 18.9991 14.7817 19.7057 13 19.7057C11.2184 19.7057 9.50973 18.9991 8.24993 17.7414C6.99012 16.4837 6.28237 14.7779 6.28237 12.9992Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="d-flex justify-content-center align-items-center iconCricle">
+                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.2997 0.285028C24.0618 0.343059 0.652125 9.29722 0.390986 9.43069C-0.131292 9.69764 -0.131292 10.6493 0.396789 10.9221C0.483835 10.9685 1.91139 11.4676 3.56527 12.0247L6.56547 13.046L13.6568 8.71111C17.5507 6.32604 20.7946 4.37621 20.8643 4.37621C20.9397 4.3704 20.9803 4.40522 20.9803 4.48646C20.9803 4.5619 19.309 6.14034 15.7169 9.4481C12.8212 12.1117 10.3955 14.3459 10.3317 14.4097C10.2272 14.52 10.1982 14.7463 10.0125 17.3055C9.90224 18.8375 9.80939 20.1374 9.80939 20.1954C9.80939 20.3811 10.0705 20.59 10.3027 20.59C10.5 20.59 10.6218 20.4856 12.2293 18.9071L13.9412 17.23L14.6492 17.7697C16.7615 19.383 19.9416 21.7739 20.1215 21.8783C20.3652 22.0292 20.9049 22.0408 21.1602 21.9073C21.3459 21.8087 21.6013 21.5533 21.6941 21.3734C21.7289 21.3096 22.7097 16.9167 23.8761 11.6185C25.3617 4.86366 26 1.87507 26 1.63715C26 1.23093 25.8607 0.90596 25.588 0.644821C25.2514 0.325651 24.7291 0.180573 24.2997 0.285028Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="d-flex justify-content-center align-items-center iconCricle">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3337 15.7507H19.2503L20.417 11.084H16.3337V8.75065C16.3337 7.54898 16.3337 6.41732 18.667 6.41732H20.417V2.49732C20.0367 2.44715 18.6005 2.33398 17.0838 2.33398C13.9163 2.33398 11.667 4.26715 11.667 7.81732V11.084H8.16699V15.7507H11.667V25.6673H16.3337V15.7507Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="borderTop pb-md-1"></div>
+        <div
+            class="mycontainer d-flex flex-column align-items-center flex-md-row justify-content-md-between py-3 pb-md-4">
+            <p class="mb-0 normal-para text-white">copyright@2023 (All right reserved)</p>
+            <p class="mb-0 normal-para text-white">hello@neptune.school | +1 (332) 278 0711</p>
+        </div>
+
+    </footer>
+
+
+    <!-- ******************** Back to Top ******************** -->
+    <div id="back-to-top" class="hidden">
+        <div class="d-flex justify-content-center align-items-center back-to-top">
+            <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.078 19.3818V4.55684L16.6832 9.09434C16.9458 9.30651 17.2842 9.40859 17.6242 9.37811C17.9641 9.34764 18.2777 9.18711 18.4959 8.93184C18.7141 8.67657 18.8191 8.34746 18.7878 8.01693C18.7564 7.6864 18.5913 7.38151 18.3288 7.16934L10.6152 0.919336C10.5538 0.877287 10.4894 0.839685 10.4224 0.806836C10.3581 0.806836 10.3195 0.806836 10.2552 0.719336C10.1078 0.662678 9.95091 0.633012 9.79241 0.631836C9.63391 0.633012 9.477 0.662678 9.32959 0.719336C9.26531 0.719336 9.22675 0.719336 9.16247 0.806836C9.09543 0.839685 9.03098 0.877287 8.96963 0.919336L1.25603 7.16934C1.11091 7.28686 0.994203 7.43404 0.914211 7.60039C0.83422 7.76675 0.792908 7.9482 0.793215 8.13184C0.792628 8.4239 0.897245 8.70695 1.0889 8.93184C1.19683 9.05841 1.32937 9.16304 1.47895 9.23973C1.62853 9.31642 1.79219 9.36366 1.96058 9.37876C2.12896 9.39385 2.29875 9.3765 2.46023 9.32769C2.6217 9.27889 2.77169 9.19959 2.9016 9.09434L8.50681 4.55684L8.50681 19.3818C8.50681 19.7134 8.64226 20.0313 8.88335 20.2657C9.12445 20.5001 9.45145 20.6318 9.79241 20.6318C10.1334 20.6318 10.4604 20.5001 10.7015 20.2657C10.9426 20.0313 11.078 19.7134 11.078 19.3818Z"
+                    fill="white" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- ******************** Bootstrap Link ******************** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+    <!-- ******************** AOS js file ******************** -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- ******************** slider js file ******************** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ******************** js file ******************** -->
+    <script src="./assets//js/app.js">
+    </script>
+</body>
+
+</html>
